@@ -329,7 +329,7 @@ h6 {
     margin-right: 10px;
     cursor: pointer;
     transition: color 0.3s; */
-  } */
+  /* } */ 
 
   /* .navmenu { */
     /* padding: 0;
@@ -345,10 +345,10 @@ h6 {
     border-radius: 6px;
     background-color: var(--nav-dropdown-background-color);
     overflow-y: auto; */
-    transition: 0.3s;
+    /* transition: 0.3s;
     z-index: 9998;
     box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 90%);
-  }
+  } */
 
   .navmenu a,
   .navmenu a:focus {
@@ -444,7 +444,7 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
-}
+
 
 /*--------------------------------------------------------------
 # Global Footer
