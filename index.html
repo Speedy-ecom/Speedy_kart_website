@@ -26,37 +26,100 @@
   <!-- Main CSS File -->
   <link href="./assets/css/main.css" rel="stylesheet">
 
+  <!-- <style>
+    .navbar {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1030;
+      height: 80px;
+      background-color:white;
+    }
+
+    .navbar-brand {
+      padding-left: 30px;
+      /* height: 50%; */
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img.navbar-navlogo {
+      /* height: 50px; */
+      width: 50px;
+    }
+  </style> -->
 </head>
 
 <body>
 
-  <!-- -- Hero Section  -->
-   <section id="hero" class="hero section">
+  <header id="header" class="showcase">
+    <div class="showcase-top">
+      <img src="assets/img/Layer 1.svg" alt="">
+    </div>
+    <div class="showcase-content">
+      <h1>all about aesthetic shopping</h1>
+      <p>Delivered to your doorsteps</p>
+      <a href="#download" class="button">
+        download app now
+      </a>
+    </div>
+    </header>
+    <!-- <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+         <img src="assets/img/Layer 1.svg" alt="">   
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#" class="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+       
+        
+          <li><a href="#download">Contact</a></li> 
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <! -- Hero Section  -->
+   <!-- <section id="hero" class="hero section">
     <div class="container-fluid">
       <div class="row">
       <div class="col-12 px-0" > 
            <div class="background" style="background-image:
-             linear-gradient(to bottom, rgba(0, 0, 0, 0.005), rgba(0, 0, 0, 0.3)),   
+             linear-gradient(to bottom, rgba(0, 0, 0, 0.0005), rgba(0, 0, 0, 0.3)),   
               url(./assets/img/fash.jpg); 
               background-size: cover; 
               background-position:center;
-              height: 100vh;
+              height: 150vh;
               width:100vw">  
-             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
-              <img src="assets/img/Layer 1.svg" alt="" class="logo">
-              <h1>All About Aesthetic Shopping</h1>
-              <p>Delivered to your doorsteps</p>
+             <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out"> -->
+              <!-- <img src="assets/img/Layer 1.svg" alt="" class="logo"> -->
+              <!-- <h1>All About</h1>
+              <p>Aesthetic Shopping</p> -->
+               <!-- <h4>Delivered to your doorstep</h4>  -->
 
-              <div class="d-flex">
-                <a href="#about" class="btn-get-started">About Us</a>
-              </div> 
-            </div> 
-            <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+              <!-- <div class="d-flex"> -->
+                <!-- <a href="#download" class="btn-get-started">Download Now</a>  -->
+              <!-- </div> 
+            </div>  -->
+            <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <img src="assets/img/shopp-removebg-preview.png" class="img-fluid animated" alt="">
-          </div>  -->
+          </div> -->
+          <!-- </div>
           </div>
-          </div>
-  </section> 
+          </div> 
+  </section>  -->
+  
 
 
   <!-- Services Section -->
@@ -71,7 +134,6 @@
     </div>
 
     <div class="container">
-
       <div class="row gy-4">
 
         <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
@@ -128,17 +190,20 @@
             delivery and safe payments</p>
         </div>
         <div class="col-xl-3 cta-btn-container text-center">
-          <a class="cta-btn align-middle" href="#">Check</a>
+          <!-- <div class="icon"><i class="bi bi-cart-check"></i></div> -->
+          <!-- <a class="cta-btn align-middle" href="#">Check</a> -->
         </div>
       </div>
     </div>
   </section>
 
-
-  <section class="download-section" data-aos="slide-right" data -aos-delay="100">
-    <div class="container mt-5">
+  <div class="container section-title mt-5" data-aos="fade-up">
+    <h2>Download</h2>
+    </div> 
+  <section id="download" class="download-section" data-aos="slide-right" data -aos-delay="100">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-12 container innerapp-wrapper" style="background:#ff9201; height: 70vh; border-radius: 10px;">
+        <div class="col-sm-12 container innerapp-wrapper" style="background:#fa9107; height: 70vh; border-radius: 10px;">
           <div class="row">
             <div class="col-lg-5 col-md-12 align-self-center,order-2">
               <div class="app-screen">
@@ -206,19 +271,19 @@
     </div>
   </section>
 
-  <div class="container-fluid footer-top bg-dark">
+  <div class="container-fluid footer-top">
     <div class="row px-0">
       <div class="col-lg-4 col-md-6 footer-about">
         <img src="assets/img/Layer 1.svg" alt="Brand Logo" style="height:60px" class="logos w-90">
 
-        <div class="footer-contact pt-3">
+        <div class="footer-contact">
           <div class="downloads-bottom">
-            <span><a href="#" target="blank" class="btn">
+            <a href="#" target="blank" class="btn">
                 <img src="assets/img/google-play2.png" alt="" style="height:40px" class="download">
-              </a></span>
-            <span><a href="#" target="blank" class="btn">
+              </a>
+            <a href="#" target="blank" class="btn">
                 <img src="assets/img/download2.png" alt="" style="height:40px" class="download">
-              </a></span>
+              </a>
           </div>
         </div>
       </div>
@@ -241,8 +306,6 @@
           <li><a href="terms.html">Terms of
             service</a>
           </li>
-          <li><a href="terms.html">Cookies</a>
-          </li>
         </ul>
       </div>
       <div class="col-lg-3 col-md-3 footer-links">
@@ -255,7 +318,7 @@
         </ul>
       </div>
       <div class="follow d-block">
-        <h4 class="m-2 p-2 fs-5">Social Media</h4>
+        <h4>Social Media</h4>
         <div class="social-links d-flex">
           <a href=""><i class="bi bi-twitter-x p-2"></i></a>
           <a href=""><i class="bi bi-facebook p-2"></i></a>
@@ -263,8 +326,8 @@
           <a href=""><i class="bi bi-linkedin p-2"></i></a>
         </div>
       
-  <div class="container-fluid copyright text-center text-light p-2 bg-dark">
-    <p>© <span>Copyright</span> <strong class="px-1 sitename">SpeedyKart</strong> <span>All Rights Reserved | Kashmeasy
+  <div class="container-fluid copyright text-center text-light p-2">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">SpeedyKart</strong> <span>All Rights Reserved |Designed By KashmEasy
         SoftLabs</span></p>
   </div>
 
