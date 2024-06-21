@@ -30,6 +30,8 @@
 
   <style>
     body {
+      margin: 0;
+      padding: 0;
       background-color: rgb(243, 237, 237);
       /* display: flex; */
       justify-content: center;
@@ -40,15 +42,13 @@
     }
 
     .navbar {
-      margin: 0;
-      padding: 0;
       width: 100%;
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       z-index: 1030;
-      height: 90px;
+      height: 80px;
       background-color: #ffff;
     }
 
@@ -73,25 +73,32 @@
       width: 100%;
       height: auto;
       margin-bottom: 40px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     .centered-container h2 {
       font-size: 30px;
       font-weight: 600;
       color: rgb(146, 138, 138);
+      text-align: justify;
     }
 
     p,
     li {
       color: rgb(96, 93, 93);
       font-size: 16px;
+      text-align: justify;
     }
 
     .container-fluid {
       display: flex;
       flex-direction: column;
     }
+    @media (max-width: 640px) {
+  {
+    
+  }
+}
   </style>
 </head>
 
@@ -106,7 +113,7 @@
   </nav>
 
   <div class="container centered-container text-left mt-5">
-    <h5 class="fs-5 text-dark text-center fs-bold mt-4">SPEEDYKART PRIVACY POLICY</h5>
+    <h5 class="fs-5 text-dark text-center fs-bold mt-4 mb-4">SPEEDYKART PRIVACY POLICY</h5>
     <p>we value the privacy of our customers and are committed to protecting your personal information. This
       Privacy Policy outlines how we collect, use, disclose, and safeguard your data when you use our
       services, visit our website, or interact with us in any other way.</p>
@@ -169,7 +176,7 @@
   </div>
 
 
-  <div class="container-fluid footer-top bg-dark">
+  <div class="container-fluid footer-top">
     <div class="row px-0">
       <div class="col-lg-4 col-md-6 footer-about">
         <img src="assets/img/Layer 1.svg" alt="Brand Logo" style="height:60px" class="logos w-90">
@@ -225,9 +232,9 @@
           <a href=""><i class="bi bi-linkedin p-2"></i></a>
         </div>
 
-        <div class="container-fluid copyright text-center text-light p-2 bg-dark">
+        <div class="container-fluid copyright text-center text-light p-2">
           <p class="text-white">© <span>Copyright</span> <strong class="px-1 sitename">SpeedyKart</strong> <span>All Rights Reserved
-              |Designed By Kashmeasy
+              |Designed By KashmEasy
               SoftLabs</span></p>
         </div>
 
