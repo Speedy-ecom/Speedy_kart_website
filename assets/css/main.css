@@ -86,7 +86,7 @@ h6 {
   width:100%;
   height:100%;
 z-index:1;
- /* background: rgba(0,0,0,0.3);  */
+ background: rgba(0,0,0,0.1); 
 }
 .showcase-top{
   position:relative;
@@ -115,7 +115,7 @@ z-index:1;
   text-align: left;
   text-transform: uppercase;
   color:#048193;
-  font-size: 2.7rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.3;
    margin:0 0 1rem;
@@ -124,7 +124,7 @@ z-index:1;
   text-align: left;
   margin: 0.5rem 0;
   color:black;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1rem;
  
   line-height: 1.5;
@@ -145,6 +145,10 @@ z-index:1;
   transition: background-color 0.3s ease; 
   text-transform: uppercase;
 } 
+.showcase-content .button:hover{
+  background-color: #e57d00;
+  color: #ffffff;
+}
 
 
 @media (max-width: 640px) {
@@ -153,7 +157,17 @@ z-index:1;
     background-image: url('../img/banner-3.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 55%; 
+    background-position: 65%; 
+  }
+  .showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); 
+    z-index: 3;
   }
   .hide-sm{
     display:none;
@@ -164,18 +178,24 @@ z-index:1;
     transform: translate(0);
   }
 .showcase-content{
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   margin-left: 20px;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 9rem;
 }
 .showcase-content h1{
   text-align: left;
+  text-transform: uppercase;
+  color:#048193;
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 1.3;
+   margin:0 0 1rem;
 
 }
 .showcase-content p{
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 800;
   /* margin-left: 15px; */
 }
 .showcase-content span{
@@ -544,6 +564,7 @@ section,
   font-size: 14px;
   margin-bottom: 0;
   text-align: justify;
+  
 }
 
 .services .service-item:hover {
@@ -573,7 +594,8 @@ section,
 @media (max-width: 640px) {
   .services .service-item p 
    {
-     text-align:left;
+    line-height: 18px;
+    font-size: 14px;
   }
 }
 
